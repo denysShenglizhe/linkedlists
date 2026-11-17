@@ -57,6 +57,13 @@ void printList(Node *head)
 int getLength(Node *head)
 {
     // TODO
+    Node * current =head;
+    int counter =0;
+    while(current!=nullptr){
+        counter+=1;
+        current =current->next;
+    }
+    return counter;
     return 0;
 }
 
@@ -69,6 +76,10 @@ int getLength(Node *head)
 void insertAtFront(Node *&head, int value)
 {
     // TODO
+    Node* front =Node(value);
+    Node-> next =head ;
+    head =Node;
+    
 }
 
 /**
